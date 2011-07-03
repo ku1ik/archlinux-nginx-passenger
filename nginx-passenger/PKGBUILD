@@ -1,4 +1,4 @@
-# $Id: PKGBUILD 18990 2010-06-18 14:40:26Z spupykin $
+# $Id: PKGBUILD 27981 2010-10-01 09:31:35Z spupykin $
 # Maintainer: Sergej Pupykin <pupykin.s+arch@gmail.com>
 # Contributor: Miroslaw Szot <mss@czlug.icis.pcz.pl>
 
@@ -11,8 +11,8 @@ _user=http
 _group=http
 
 pkgname=nginx
-pkgver=0.7.67
-pkgrel=3
+pkgver=0.8.52
+pkgrel=2
 pkgdesc="lightweight HTTP server and IMAP/POP3 proxy server"
 arch=('i686' 'x86_64')
 depends=('pcre' 'zlib' 'openssl')
@@ -27,8 +27,8 @@ backup=("${_conf_path#/}/nginx.conf" \
 	"etc/logrotate.d/nginx")
 source=(http://sysoev.ru/nginx/nginx-${pkgver}.tar.gz \
 	nginx)
-md5sums=('b6e175f969d03a4d3c5643aaabc6a5ff'
-         '0eb8611bf5bc1192ee7ee606fce772e2')
+md5sums=('8c1f0b6b9ad205b65248b1c55d3d801d'
+         '998fe7467e9abfb414cc6ae23475bea9')
 
 build() {
 	local _src_dir=$srcdir/nginx-${pkgver}
